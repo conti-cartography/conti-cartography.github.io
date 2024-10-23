@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Cartography Portfolio - Joel Conti</title>
+	<link href="styles.css" rel="stylesheet" >
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+
+<style>
+		body {
+	   		 font-family: "source sans pro";
+	   		 line-height: 18.5px;
+			   }
+	.navbar {
+		  overflow: hidden;
+		  background-color: #333;
+		  position: fixed; /* Set the navbar to fixed position */
+		  top: 0; /* Position the navbar at the top of the page */
+		  width: 100%; /* Full width */
+		  		  line-height: 18.5px;
+		  font-size: 16px;
+		  font-weight: 450;
+		  justify-content: center;
+		  padding-left: 5%;
+		  
+		
+		}
+
+		/* Links inside the navbar */
+	.navbar a {
+		  float: left;
+		  /* display: block; */
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 10px;
+		  text-decoration: none;
+		  line-height: 18.5px;
+		  font-size: 16px;
+		  font-weight: 450;
+
+		}
+
+
+		/* Change background on mouse-over */
+	.navbar a:hover {
+		  background: #ddd;
+		  color: black;
+		  border-radius: 5px;
+	}
+
+	.main {
+			  
+		font-family: "source sans pro";
+
+		text-align: justify;
+		text-justify: inter-word;
+	  	background: #222325;
+		color: #f7f7f7;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 18.5714px;
+		margin-top: 100px;
+		margin-left: 350px;
+		padding-left: 1.5%;
+		/*border-left: 7px solid #9195a1;*/
+
+	}
+
+	.sidenav {
+	  width: 300px;
+	  position: fixed;
+	  z-index: 1;
+	  left: 10px;
+	  overflow-x: hidden;		
+	  margin-left: 2.5%;
+	}
+
+	.sidenav a {
+	  padding-left: 10px;
+	  padding-bottom: 10px;
+	  line-height: 	12px;
+	  text-decoration: none;
+	  font-size: 16px;
+	  color: #f7f7f7;
+	  display: block;
+	}
+	.sidenav p {
+		padding-bottom: 5px;
+		font-weight	: 600;
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+	.sidenav a:hover {
+	  color: #064579;
+	}
+
+	.TopText {
+		padding-right: 30%;	font-size: 16px; line-height: 1.25;
+	}
+
+  @media screen and (max-width: 1280px) {
+		body {margin-left: 0px; padding-left: 15px;}
+		.main { margin-left: 15px; }
+		.navbar { font-size: 18px }
+	}
+
+	.column {
+		padding: 3px;
+	}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+ 	<div class="row">
+	<div class="column">
+		<a href="https://hadaril.github.io/" style="background-color: #403e3e; margin: 5px; border-radius: 10px;"><b>Home Page</b></a></div>
+	<div class="column" style="background-color: #403e3e; margin: 5px; border-radius: 10px; margin-left: 30px">
+  		<a href="https://hadaril.github.io/Portfolio" style="float: left">Map Portfolio</a>
+  		<a href="https://hadaril.github.io/DataViz" style="float: left">Data Visualizations</a>
+  		<a href="https://hadaril.github.io/WebMaps" style="float: left">Web Maps</a>
+	  	<a href="https://hadaril.github.io/WorldaIndex" style="float: left">WorldA Index</a></div>
+  	<div class="column" style="background-color: #403e3e; margin: 5px; border-radius: 10px; margin-left: 30px">
+  		<a href="https://hadaril.github.io/Contact"><b>Contact & Commissions</b></a></div>
+</div>
+</div>
+
+
+<div class ="sidenav">
+<p style="font-style: bold; font-size: 18px">Navigation</p>
+  <a href="#PopMaps">Population Maps</a>
+  <a href="#Tables">Tables</a>
+  <a href="#EthnicCharts">Demographics & Ancestry</a>
+  <a href="#EngageMaps">Engagement & Beliefs</a>
+  <a href="#OtherCharts">Other Charts</a>
+</div>
+
+<div class="main">
+
+<h2>Catholic Data Visualizations</h2>
+<div class="TopText">This page serves as a portfolio of data visualizations produced for my thesis, <br><i>"The Geographic Roots of Cultural and Liturgical Differences Amongst American Catholics"</i><br>produced in partial fulfilment of the requirements for my M.S. in Cartography. </div>
+<br>
+<div class="TopText" style = "font-size: 18px;"><b>Link to the thesis: <u><a href = "http://mars.gmu.edu/handle/1920/13342">Click Here</a></b></u></div>
+<br>
+
+
+<h3 id="PopMaps">Population Maps</h3>
+<div class="PortfolioGallery2">
+	<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="maps/Catholic_1.png">
+			<img src="maps/Catholic_1.png" alt="Catholicism" height="803">
+			</a></div></div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="maps/Catholic_2.png">
+			<img src="maps/Catholic_2.png" alt="Catholicism" height="803">
+			</a></div></div>
+	</div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/PopChange.png">
+			<img src="catholicism/PopChange.png" alt="Catholicism" height="424">
+			</a></div></div>
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/SharePointChange.png">
+			<img src="catholicism/SharePointChange.png" alt="Catholicism" height="424">
+			</a></div></div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/CathPop1972.png">
+			<img src="catholicism/CathPop1972.png" alt="Catholicism" height="424">
+			</a></div></div>
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/CathPop2020.png">
+			<img src="catholicism/CathPop2020.png" alt="Catholicism" height="424">
+			</a></div></div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="maps/ArlingtonDiocese.png">
+			<img src="maps/ArlingtonDiocese.png" alt="Catholicism" height="803">
+			</a></div></div>
+</div>
+
+<br>
+
+<h3 id="Tables">Tables</h3>
+<div class="PortfolioGallery2">
+	<!--
+		<div class="row">
+			<div class="column">
+				<div class="image"><a target="_blank" href="catholicism/Adherance_Table_2.png">
+				<img src="catholicism/Adherance_Table_2.png" alt="Catholicism" height="569">
+				</a></div></div>
+		</div>
+	//-->
+	<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/Adherance_Table.png">
+			<img src="catholicism/Adherance_Table.png" alt="Catholicism" height="478">
+			</a></div></div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/Attendance_Table.png">
+			<img src="catholicism/Attendance_Table.png" alt="Catholicism" height="536">
+			</a></div></div>
+	</div>
+</div>
+
+<br>
+
+<h3 id="EthnicCharts">Ethnicity Charts </h3>
+<p>Data for these maps is sourced from the General Social Survey (GSS).
+
+<div class = "PortfolioGallery2">
+	<div class="row">
+		
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/AncestryUrbanRural.png">
+			<img src="catholicism/AncestryUrbanRural.png" alt="Catholicism" height="690">
+			</a></div></div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/Ancestry_Historic.png">
+			<img src="catholicism/Ancestry_Historic.png" alt="Catholicism" height="396">
+			</a></div></div>
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/Ancestry_Modern.png">
+			<img src="catholicism/Ancestry_Modern.png" alt="Catholicism" height="396">
+			</a></div></div>
+	</div>
+	<div class="row"><!--
+	<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/Ancestry_Total.png">
+			<img src="catholicism/Ancestry_Total.png" alt="Catholicism" height="450">
+			</a></div></div>
+	</div>//-->
+	<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/Ancestry_Map.png">
+			<img src="catholicism/Ancestry_Map.png" alt="Catholicism" height="718">
+			</a></div></div>
+	</div>
+
+<br>
+<h3 id="EngageMaps">Engagement and Belief Maps </h3>
+
+<div class = "PortfolioGallery2">
+
+	<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/Heaven.png">
+			<img src="catholicism/Heaven.png" alt="Catholicism" height="338">
+			</a></div></div>
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/Hell.png">
+			<img src="catholicism/Hell.png" alt="Catholicism" height="338">
+			</a></div></div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/Spirits.png">
+			<img src="catholicism/Spirits.png" alt="Catholicism" height="338">
+			</a></div></div>
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/Miracles.png">
+			<img src="catholicism/Miracles.png" alt="Catholicism" height="338">
+			</a></div></div>
+	</div>
+		<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/Convert.png">
+			<img src="catholicism/Convert.png" alt="Catholicism" height="348">
+			</a></div></div>
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/RetentionRate.png"> 	
+			<img src="catholicism/RetentionRate.png" alt="Catholicism" height="348">
+			</a></div></div>
+	</div>
+
+</div>
+
+<br>
+
+<h3 id="OtherCharts">Other Charts</h3>
+
+<div class = "PortfolioGallery2">
+	<div class="row">
+			<div class="column">
+				<div class="image"><a target="_blank" href="catholicism/DestinationRegion.png">
+				<img src="catholicism/DestinationRegion.png" alt="Catholicism" height="424">
+				</a></div></div>
+			<div class="column">
+				<div class="image"><a target="_blank" href="catholicism/OriginRegion.png">
+				<img src="catholicism/OriginRegion.png" alt="Catholicism" height="424">
+				</a></div></div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="image"><a target="_blank" href="catholicism/AbandonCombined.png">
+			<img src="catholicism/AbandonCombined.png" alt="Catholicism" height="699">
+			</a></div></div>
+		</div>
+	<div class="row">
+			<div class="column">
+				<div class="image"><a target="_blank" href="catholicism/DivisionalShare.png">
+				<img src="catholicism/DivisionalShare.png" alt="Catholicism" height="500">
+				</a></div></div>
+			<div class="column">
+				<div class="image"><a target="_blank" href="catholicism/DestinationYearly.png">
+				<img src="catholicism/DestinationYearly.png" alt="Catholicism" height="500">
+				</a></div></div>
+	</div>
+	<div class="row">
+			<div class="column">
+				<div class="image"><a target="_blank" href="catholicism/DioceseSituation.png">
+				<img src="catholicism/DioceseSituation.png" alt="Catholicism" height="412">
+				</a></div></div>
+			<div class="column">
+				<div class="image"><a target="_blank" href="catholicism/AbandonLocation.png">
+				<img src="catholicism/AbandonLocation.png" alt="Catholicism" height="412">
+				</a></div></div>
+		</div>
+	<div class="row">
+			<div class="column">
+				<div class="image"><a target="_blank" href="catholicism/AttendRegion.svg">
+				<img src="catholicism/AttendRegion.svg" alt="Catholicism" height="443">
+				</a></div></div>
+			<div class="column">
+				<div class="image"><a target="_blank" href="catholicism/AttendWeeklyYearly.svg">
+				<img src="catholicism/AttendWeeklyYearly.svg" alt="Catholicism" height="443">
+				</a></div></div>
+			</div>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div style = "padding-right: 800px;	font-size: 12px;">Copyright 2023 Joel Conti; All Rights Reserved</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+	font-family: "source sans pro";
+	
+  	background: #222325;
+	color: #f7f7f7;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 450;
+	line-height: 18px;
+	padding-left: 5%;
+	padding-left: 5%;
+	margin-right: 5%;
+}
+
+h1 {
+	font-family: "Source Sans Pro";
+	font-size:  36px;
+}
+
+h2 {
+	font-family: "Crimson Text";
+}
+
+h1.PageTitle{
+	margin-bottom: 15px;
+}
+
+h2.PageSubtitle{
+	margin-bottom: 40px;
+	padding-top: 5px;;
+	font-style: italic;
+}
+
+.MainPageHeader {
+	padding-top:  60px;
+	text-align:  center;
+}
+
+.IntroText {
+	padding-top:  25px;
+	padding-left: 20%;
+	padding-right: 20%;
+	text-align:  center;
+}
+
+div.SectionHeading {
+	color: #ffffff;
+	background: #46484e;
+}
+
+h3 {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	line-height: 18px;
+	font-size: 28px;
+	height: 24px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 6px;
+	margin-right: 301px;
+}
+
+a {
+	line-height: 0px;
+	color: #ffffff;
+	text-decoration-color: #efefef;
+}
+
+@media screen and (max-width: 1280px) {
+	body {
+		margin-left: 15px;
+	}
+	p {
+		margin-right: 22px;
+	}
+	h3 {
+		margin-right: 22px;
+	}
+	.sidenav { display: none; }
+	.navbar { font-size: 18px; }
+	.main {
+		margin-left: 15px;
+		padding-left: 1.5%;
+	}
+}

@@ -1,0 +1,17 @@
+<head>
+	<title>Hadaril - Cartographic Projects</title>
+	<link href="styles.css" rel="stylesheet" >
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiamNvbnRpNCIsImEiOiJja2xoYWk1Nm0yY2swMnZ0a3luY2RqeDNuIn0.VBrZYdcykWCysnfQ73LMNg';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+  });
+</script>
+
