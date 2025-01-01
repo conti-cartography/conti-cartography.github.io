@@ -1,5 +1,5 @@
 body {
-	font-family: "source code pro";
+	font-family: "source sans pro";
 
 	text-align: justify;
 	text-justify: inter-word;
@@ -53,7 +53,7 @@ h3 {
 	line-height: 18px;
 	font-size: 30px;
 	color: #ffffff;
-	background: #46484e;
+	background: #333;
 	height: 24px;
 	padding-left: 20px;
 	padding-right: 0px;
@@ -321,4 +321,43 @@ div.nextgenBox > div.row > div.column > h5 {
 	flex-wrap: wrap;
 	justify-content: center; 
 	padding-bottom: 20px;
+}
+
+
+
+.navbar {
+	  overflow: hidden;
+	  background-color: #333;
+	  position: fixed; /* Set the navbar to fixed position */
+	  top: 0; /* Position the navbar at the top of the page */
+	  width: 100%; /* Full width */
+	  line-height: 18.5px;
+	  font-size: 16px;
+	  font-weight: 450;
+	  justify-content: center;
+	  padding-left: 5%;
+	  padding-bottom: 1px;
+	  z-index: 99 !important;
+
+	}
+
+	/* Links inside the navbar */
+.navbar a {
+	  float: left;
+	  /* display: block; */
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 10px;
+	  text-decoration: none;
+	  line-height: 18.5px;
+	  font-size: 16px;
+	  font-weight: 450;
+
+	}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+	  background: #ddd;
+	  color: black;
+	  border-radius: 5px;
 }

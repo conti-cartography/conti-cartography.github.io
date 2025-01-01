@@ -13,12 +13,12 @@ body {
 }
 
 h1 {
-	font-family: "Source Sans Pro";
+	font-family: "Crimson pro";
 	font-size:  36px;
 }
 
 h2 {
-	font-family: "Crimson Text";
+	font-family: "Crimson pro";
 }
 
 h1.PageTitle{
@@ -27,8 +27,7 @@ h1.PageTitle{
 
 h2.PageSubtitle{
 	margin-bottom: 40px;
-	padding-top: 5px;;
-	font-style: italic;
+	padding-top: 5px;
 }
 
 .MainPageHeader {
@@ -64,22 +63,4 @@ a {
 	line-height: 0px;
 	color: #ffffff;
 	text-decoration-color: #efefef;
-}
-
-@media screen and (max-width: 1280px) {
-	body {
-		margin-left: 15px;
-	}
-	p {
-		margin-right: 22px;
-	}
-	h3 {
-		margin-right: 22px;
-	}
-	.sidenav { display: none; }
-	.navbar { font-size: 18px; }
-	.main {
-		margin-left: 15px;
-		padding-left: 1.5%;
-	}
 }

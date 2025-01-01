@@ -1,19 +1,19 @@
-		<!DOCTYPE html>
-		<html>
-		<head>
-			<title>Cartography Portfolio - Joel Conti</title>
-			<link href="styles.css" rel="stylesheet" >
-			<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
-			<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
-			<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-				<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-				<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
-				<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cartography Portfolio - Joel Conti</title>
+	<link href="styles.css" rel="stylesheet" >
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
 
 
-			<style>
+<style>
 			
 	
 	/* The top menu */
@@ -29,51 +29,12 @@
 		margin-right: 0px;
 	}
 
-
-	.navbar {
-		  overflow: hidden;
-		  background-color: #333;
-		  position: fixed; /* Set the navbar to fixed position */
-		  top: 0; /* Position the navbar at the top of the page */
-		  width: 100%; /* Full width */
-		  line-height: 18.5px;
-		  font-size: 16px;
-		  font-weight: 450;
-		  justify-content: center;
-		  padding-left: 5%;
-		  padding-bottom: 1px;
-		  z-index: 99 !important;
-
-		}
-
-		/* Links inside the navbar */
-	.navbar a {
-		  float: left;
-		  /* display: block; */
-		  color: #f2f2f2;
-		  text-align: center;
-		  padding: 10px;
-		  text-decoration: none;
-		  line-height: 18.5px;
-		  font-size: 16px;
-		  font-weight: 450;
-
-		}
-
-
-		/* Change background on mouse-over */
-	.navbar a:hover {
-		  background: #ddd;
-		  color: black;
-		  border-radius: 5px;
-	}
-
 	.main {
 			  
 		font-family: "source sans pro";
 		text-align: justify;
 		text-justify: inter-word;
-	  	background: ##282826;
+	  	background: #222325;
 		color: #f7f7f7;
 		font-size: 16px;
 		font-style: normal;
@@ -129,8 +90,6 @@
 	  border-radius: 5px;
 	}
 
-
-
 .image {
 	 position: relative;
   display: block;
@@ -155,7 +114,7 @@
   color: white;
   font-size: 16px;
   padding-top: 30px;
-    padding-bottom: 30px;
+  padding-bottom: 30px;
   margin-bottom: px;
   text-align: center;
   line-height: 18px;
@@ -169,61 +128,97 @@
 	padding-top: 1px;
 }
 
+.SectionHeader {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
 
-	@media screen and (max-width: 1280px) {
+.logo {
+	position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  z-index: 100	 !important;
+}
+
+@media screen and (min-width: 1281px) {
+	.SectionHeader {
+		position: sticky;
+		top: 51px;
+		z-index: 100;
+		background-color: #222325;
+	}
+
+}
+
+@media screen and (max-width: 1280px) {
 		body {margin-left: 0px; margin-right: 0px; }
 		.main { padding-left: 30px; margin-left: 0px; margin-right: 30px; }
-		.navbar { margin-left: 0px; padding-left: 15px; font-size: 18px }
+		.navbar { padding-left: 90px; font-size: 18px }
 		.PageIntroText { margin-right: 40px }
 	}
 
-
-
-	</style>
+</style>
 </head>
+
+
 <body>
 
+<div class="logo">
+	<a target="_blank" href="https://conti-cartography.github.io/">
+		<img src="GooseCompass.svg" width = 70 height = 70 style ="float: left; padding-left: 10px"></a>
+</div>
 
- <div class="navbar">
- 	<div class="row">
-	<div class="column">
-		<a href="https://conti-cartography.github.io/" style="background-color: #403e3e; margin: 5px; border-radius: 10px;"><b>Home Page</b></a></div>
-	<div class="column" style="background-color: #403e3e; margin: 5px; border-radius: 10px; margin-left: 30px">
-  		<a href="https://conti-cartography.github.io/Portfolio" style="float: left">Map Portfolio</a>
+
+<div class="navbar">
+  <div class="row">
+
+ 	<!-- Old background color: 403e3e //-->
+		<div class="column" style="background-color: #494746; border-radius: 10px; margin: 5px;">
+			<a href="https://conti-cartography.github.io/"><b>Home Page</b></a></div>
+
+		<div class="column" style="background-color: #494746; margin: 5px; border-radius: 10px; margin-left: 30px">
+			<!-- <div class = "NavRowHead" style="background-color: #63615b; float:  left"><b>Portfolio Galleries:</b></div> //-->
+  		<a href="https://conti-cartography.github.io/Portfolio" style="float: left"><b>Map Portfolio</b></a>
   		<a href="https://conti-cartography.github.io/DataViz" style="float: left">Data Visualizations</a>
   		<a href="https://conti-cartography.github.io/WebMaps" style="float: left">Web Maps</a>
-	  	<a href="https://conti-cartography.github.io/WorldaIndex" style="float: left">WorldA Index</a></div>
-  	<div class="column" style="background-color: #403e3e; margin: 5px; border-radius: 10px; margin-left: 30px">
-  		<a href="https://conti-cartography.github.io/Contact"><b>Contact & Commissions</b></a></div>
-  	<div class="column" style="float:"></div>
-</div>
+	  	<a href="https://conti-cartography.github.io/WorldaIndex" style="float: left">WorldA Index</a>
+		</div>
+
+  	<div class="column" style="background-color: #494746; margin: 5px; border-radius: 10px; margin-left: 30px">
+  		<a href="https://conti-cartography.github.io/Contact"><b>Contact & Commissions</b></a>
+  	</div>
+
+	</div>
 </div>
 
 <div class ="sidenav">
 <p style="font-style: bold; font-size: 18px">Navigation</p>
-  <a href="#TheBest">The Best</a>
-  <a href="#ArcGISMaps">ArcGIS Maps</a>
+  <a href="#TheBest">Freelance</a>
+  <a href="#SPGlobal">S&P Global</a>
+  <a href="#ArcGISMaps">Grad School</a>
   <a href="#OtherProjects">Other Projects</a>
   <a href="#ScifiFantasy">SciFi & Fantasy</a>
-  <a href="#BlankMaps">Blank Maps</a>
 </div>
 <div class = "main">
 
 
-	<h2>Static & Print Map Portfolio</span></h2>
-			</br>
-			<p class="PageIntroText">This page serves as an index for the majority of the maps I have produced over the past decade, both as a hobbyist and freelance cartographer.</br>
-			<p class="PageIntroText">My best cartographic design work can be found in the first section. This section is a mix of thematic maps, historical reference maps, park maps, and alternate history & fantasy cartography. The second section contains a gallary of thematic and reference maps produced in ArcGIS for commissions, coursework, and personal interest. Finally, the final two sections contain older science fiction & fantasy maps produced in high school and college, preserved for posterity. </p>
+<h2>Static & Print Map Portfolio</span></h2>
+	</br>
+		<p class="PageIntroText">This page serves as an index for the majority of the maps I have produced over the past decade, both as a hobbyist and freelance cartographer.</br>
+		<p class="PageIntroText">My best cartographic design work can be found in the first section. This section is a mix of thematic maps, historical reference maps, park maps, and alternate history & fantasy cartography. The second section contains a gallary of thematic and reference maps produced in ArcGIS for commissions, coursework, and personal interest. Finally, the final two sections contain older science fiction & fantasy maps produced in high school and college, preserved for posterity. </p>
+		<p class="PageIntroText">Be sure to also check out my series of 80+ historical reference maps, which can be found on the <a href="https://conti-cartography.github.io/WorldaIndex">"NextGen WorldA's" page</a></p>
 
-			<p class="PageIntroText">Be sure to also check out my series of 80+ historical reference maps, which can be found on the <a href="https://conti-cartography.github.io/WorldaIndex">"NextGen WorldA's" page</a></p>
+<div id="TheBest"></div>
 
-		</br></br>
+	</br>
+	</br>
 
 
-<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 20px">
-<h3 id="TheBest" style = "margin-bottom: 0px;">The Best Stuff<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Cartographic Design Showcase</span></h3>
-<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px">
-
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2; margin: 0px; width:100%;">
+<div class = "SectionHeader">
+	<h3 style = "margin-bottom: 10px; margin-top: 10px">Freelance Work & Passion Projects<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Cartographic Design Showcase</span></h3>
+</div>
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2; margin: 0px; width:100%">
+	
 	</br>
 			<div class="PortfolioGallery2">
 
@@ -376,14 +371,24 @@
 					<div class="overlay">A choropleth map of the 2020 minority share of the population by county in Virginia</br><i>Data from ESRI.</i></div>
 					</a></div></div>
 			</div>
-		</br>
-
-
 
 </br>
-<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 60px">
-	<h3 id="ArcGISMaps" style = "margin-bottom: 0px;">ArcGIS Work<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Thematic and Reference Maps made with ArcPro</span></h3>
-<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 40px">
+
+<hr id="SPGlobal" style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 60px">
+<div class = "SectionHeader">
+	<h3 style = "margin-bottom: 0px; margin-top: 10px;">S&P Global<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Maps produced at S&P Global with MAPublisher.</span></h3>
+</div>
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 45px;">
+
+
+
+<hr id="ArcGISMaps" style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 60px">
+<div class = "SectionHeader">
+	<h3 style = "margin-bottom: 0px; margin-top: 10px;">Graduate School ArcGIS<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Thematic and Reference Maps, primarily for grad school.</span></h3>
+</div>
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 45px;">
+
+
 	</br></br>
 
 
@@ -475,10 +480,12 @@
 
 		</div>
 
+</br>
 
-<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 80px">
-<h3 id="OtherProjects" style = "margin-bottom: 0px;">Other Projects<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Older Maps, Misc. Odds and Ends...</span></h3>
-<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 60px">
+<hr id="OtherProjects" style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 80px">
+	<div class="SectionHeader"><h3 style = "margin-bottom: 0px; margin-top:  10px;">Other Projects<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Older Maps, Misc. Odds and Ends...</span></h3></div>
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 45px;">
+
 
 			<div class="PortfolioGallery2">
 			<div class="row">
@@ -507,11 +514,14 @@
 			</div>
 			//-->
 
+</br>
 
 
-	<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 100px">
-	<h3 id="ScifiFantasy" style = "margin-bottom: 0px;">Sci-Fi, Fantasy, and Video Games <span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Much, Much Older Work... (Pre-2018)</span></h3>
-	<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 60px;">
+<hr id="ScifiFantasy" style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 100px">
+	<div class="SectionHeader">
+		<h3 style = "margin-bottom: 0px; margin-top:  10px;">Sci-Fi, Fantasy, and Video Games <span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Much, Much Older Work... (Pre-2018)</span></h3>
+	</div>
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 45px;">
 
 		<p>These maps are much, much older works of mine. The most recent one is over five years old as of 2021. They don't represent my current ability, and are almost all deprecated.</p> </br>
 
@@ -580,10 +590,12 @@
 
 		</div>
 
+<!--
+
 <hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 100px">
-	<h3 id="BlankMaps" style = "margin-bottom: 0px;">Blank Maps<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Templates for your own projects!</span></h3>
-<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 10px;">
-</br>
+<div class="SectionHeader"><h3 id="BlankMaps" style = "margin-bottom: 0px;  margin-top:  10px;">Blank Maps<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Templates for your own projects!</span></h3></div>
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 45px;">
+
 
 <p style="margin-bottom: 60px"> All maps in this section are free for reproduction and use for any non-commercial project</p>
 		<div class="PortfolioGallery2">
@@ -618,6 +630,7 @@
 
 </br></br></br></br>
 
+//-->
 
 
 

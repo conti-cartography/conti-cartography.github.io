@@ -63,32 +63,15 @@
 
 	.main {
 	  margin-top: 30px; /* Same width as the sidebar + left position in px */\
-	  padding-left: ;
+	  padding-left: 0px
 	}
 
 	body {
 		margin-left: 0px;
-	}
-
-
-.
-	@media screen and (max-width: 1280px) {
-		body {margin-left: 0px; padding-left: 15px;}
-		.main { margin-left: 15px; }
-		.navbar { font-size: 18px }
-		p { font-size: 16px; }
-	}
-	body{
 		padding-left: 0px;
 	}
-}
 
-	@media screen and (max-width: 900) {
-		body {margin-left: 0px; padding-left: 15px;}
-		.main { margin-left: 15px; }
-		.navbar { font-size: 18px }
-		h2.BigText { font-size: 36px; }
-	}
+
 
 a.contact_link {
 	  float: left;
@@ -118,20 +101,76 @@ a.contact_link {
 	justify-content: ;
 }
 
-	</style>
+.logo {
+	position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  z-index: 100	 !important;
+}
+
+.commissions_text {
+	text-align: center;
+	background: #333;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.commissions {
+	margin-left: 28%;
+	margin-right: 28%;
+	
+}
+
+.contact {
+	margin-left: 33%;
+	margin-right: 33%;
+	text-align: center;
+	margin-top: 40px;
+}
+
+h1 {
+	font-family: "Crimson Text";
+}
+
+
+h2.BigText {
+	font-family: "Crimson Text";
+	font-style: italic;
+}
+
+@media screen and (max-width: 1280px) {
+	body {margin-left: 0px; padding-left: 15px;}
+	.main { margin-left: 15px; }
+	.navbar { font-size: 18px; padding-left: 90px}
+	.MainPageHeader {margin-left: 15px; }	
+	img.gooseimg{display: none;}
+	p { font-size: 16px; padding-left: 0px;
+}
+
+body{
+	padding-left: 0px;
+}
+
+
+</style>
 </head>
 <body>
+
+
+<div class="logo">
+	<a target="_blank" href="https://conti-cartography.github.io/">
+		<img src="GooseCompass.svg" width = 70 height = 70 style ="float: left; padding-left: 10px"></a>
+</div>
 
 <div class="navbar">
  	<div class="row">
 	<div class="column">
-		<a href="https://conti-cartography.github.io/" style="background-color: #403e3e; margin: 5px; border-radius: 10px;"><b>Home Page</b></a></div>
-	<div class="column" style="background-color: #403e3e; margin: 5px; border-radius: 10px; margin-left: 30px">
+		<a href="https://conti-cartography.github.io/" style="background-color: #494746; margin: 5px; border-radius: 10px;"><b>Home Page</b></a></div>
+	<div class="column" style="background-color: #494746; margin: 5px; border-radius: 10px; margin-left: 30px">
   		<a href="https://conti-cartography.github.io/Portfolio" style="float: left">Map Portfolio</a>
   		<a href="https://conti-cartography.github.io/DataViz" style="float: left">Data Visualizations</a>
   		<a href="https://conti-cartography.github.io/WebMaps" style="float: left">Web Maps</a>
 	  	<a href="https://conti-cartography.github.io/WorldaIndex" style="float: left">WorldA Index</a></div>
-  	<div class="column" style="background-color: #403e3e; margin: 5px; border-radius: 10px; margin-left: 30px">
+  	<div class="column" style="background-color: #494746; margin: 5px; border-radius: 10px; margin-left: 30px">
   		<a href="https://conti-cartography.github.io/Contact"><b>Contact & Commissions</b></a></div>
   	<div class="column" style="float:"></div>
 </div>
@@ -139,49 +178,87 @@ a.contact_link {
 
 
 
+
 <hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:35%;">
 <hr style="height:2px;border-width:0; border-top: 2px solid #d2d2d2;margin-top: 1px; margin-bottom: 20px;width:42%;">
 
+
 <div class ="MainPageHeader" style = "margin-top: 50px">
-	<h1 class = "PageTitle" style = "font-size: 48px; padding-bottom: 50px">Let's Connect!</h1>
-	<h2 class = "BigText" style="margin-bottom: 40px">Let's get in touch! I'd love to hear from you. Don't hesitate to me an email, or follow me on social media to follow along with my latest work.</h2>
-	
 
-<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2; margin-top: 20px;width:35%;">
-<hr style="height:2px;border-width:0; border-top: 2px solid #d2d2d2;margin-top: 1px;width:42%; margin-bottom: 20px">
+	<div class = "commissions" style = "padding: 15px; display: flex; background: #333; border-radius: 10px; padding: 10px;">
+		<img class="gooseimg" src="GooseCompassExport.svg" width = 160 style = "float:left;">
 
-<div class="PortfolioGallery2" style = "text-align:  center; margin-right: 	30%; margin-left:30%; margin-top: 10px">
-	<div class="row">
-		<div class="column" id=contact_col>
-			<a class=contact_link href="mailto:jconti128@gmail.com" style="background-color: #d2c5a0; padding: 10px;margin: 5px; border-radius: 10px; text-decoration:none">
-				<img src="assets/email.png" width="25" height="25" style="vertical-align: middle; padding-right:6px">
-				<span style="font-size: 15px; padding-left: 5px; text-decoration:none; color: #4d2f10"><b>Email:</b>  &nbsp jconti128@gmail.com</span></a>
+		<div class="commissions_text" style = "display: flex; flex-direction: column;">
+			<h1 class="h1comms" style = "margin: 0px; background: #494746; border-radius: 10px; padding: 8px;"><span style = "font-size: 48px; line-height: 50px; margin-bottom: 10px">Commissions are OPEN!</span>			</h1>
 
-			<a class=contact_link href="https://www.linkedin.com/in/joelconti/" style="background-color: #4a68b0; padding: 10px;margin: 5px; border-radius: 10px;text-decoration:none">
-				<img src="assets/linkedin.png" width="25" height="25" style="vertical-align: middle; padding-right:6px">
-				<span style="font-size: 15px; padding-left: 5px; "><b>Linkedin:</b> &nbsp   @JoelConti</span></a>
-
-			<a class=contact_link href="https://twitter.com/JoelConti" style="background-color: #4aa6b0; padding: 10px;margin: 5px; border-radius: 10px; text-decoration:none">
-				<img src="assets/twitter.png" width="25" height="25" style="vertical-align: middle; padding-right:6px">
-				<span style="font-size: 15px; padding-left: 5px"><b>Twitter / X:</b>  &nbsp @JoelConti</span></a>
+			<p class="pcomms" style="font-size: 16px; line-height: 22px; margin-top: 30px;">Want your own custom maps? Be it a map for your book, a print for your wall, something for your fantasy or alternate history settings, or anything in between, I would love to work with you to create <i>exactly</i> the map you’re looking for.</br>
+			<a href="mailto:jconti128@gmail.com" style = "padding: 0px; font-style: underline">Reach out over email, and let’s get started!</a></p>
 		</div>
 	</div>
-</div>
+
+
+
+
+
+	<!--
+	<div class = "commissions" style = "padding: 15px; display: flex">
+		<img class="gooseimg" src="GooseCompassExport.svg" width = 170 style = "float:left; position: absolute;">
+
+		<div class="commissions_text" style = "padding-left: 180px">
+
+			<h1 class="h1comms" style = "margin: 0px; background: #403e3e; border-radius: 10px; padding: 8px;"><span style = "font-size: 48px; line-height: 50px; margin-bottom: 10px">Commissions are OPEN!</span>			</h1>
+
+			<p class="pcomms" style="font-size: 16px; line-height: 22px; margin-top: 30px;">Want your own custom maps? Be it a map for your book, a print for your wall, something for your fantasy or alternate history settings, or anything in between, I would love to work with you to create <i>exactly</i> the map you’re looking for.</br> Reach out over email, and let’s get started!</p>
+
+		</div>
+	</div>
+	//-->
 
 </div>
+
+	<div class = "contact"><h2 style = "font-size: 38px; padding-bottom: 10px; margin-top: 55px; margin-bottom: 20px">Let's Connect!</h2></div>
+
+
+	<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2; margin-top: 40px;width:35%;">
+	<hr style="height:2px;border-width:0; border-top: 2px solid #d2d2d2;margin-top: 1px;width:42%; margin-bottom: 20px">
+
+	<div class="PortfolioGallery2" style = "text-align:  center; margin-right: 	30%; margin-left:30%; margin-top: 10px">
+		<div class="row">
+			<div class="column" id=contact_col>
+				<a class=contact_link href="mailto:jconti128@gmail.com" style="background-color: #d2c5a0; padding: 10px;margin: 5px; border-radius: 10px; text-decoration:none">
+					<img src="assets/email.png" width="25" height="25" style="vertical-align: middle; padding-right:6px">
+					<span style="font-size: 15px; padding-left: 5px; text-decoration:none; color: #4d2f10"><b>Email:</b>  &nbsp jconti128@gmail.com</span></a>
+
+				<a class=contact_link href="https://www.linkedin.com/in/joelconti/" style="background-color: #4a68b0; padding: 10px;margin: 5px; border-radius: 10px;text-decoration:none">
+					<img src="assets/linkedin.png" width="25" height="25" style="vertical-align: middle; padding-right:6px">
+					<span style="font-size: 15px; padding-left: 5px; "><b>Linkedin:</b> &nbsp   @JoelConti</span></a>
+
+				<a class=contact_link href="https://twitter.com/JoelConti" style="background-color: #4aa6b0; padding: 10px;margin: 5px; border-radius: 10px; text-decoration:none">
+					<img src="assets/twitter.png" width="25" height="25" style="vertical-align: middle; padding-right:6px">
+					<span style="font-size: 15px; padding-left: 5px; line-height: 12px"><b>Twitter / X:</b>  &nbsp @JoelConti </span></a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<hr style="height:2px;border-width:0; border-top: 2px solid #d2d2d2;margin-top: 30px;width:42%;">
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2; margin-top: 1px;width:35%;">
+
+	<div class = "contact" style = "">
+
+		<p class = "pcomms" style="margin-bottom: 38px; line-height: 20px; padding-left: 30px; padding-right: 30px; font-size: 16px;">Let's get in touch! I'd love to hear from you. Don't hesitate to me an email, or follow me on social media to follow along with my latest work.</h2>
+	
+
 
 	<!-- <p style = "font-size:16px"><b>EMAIL: </b> &nbsp jconti128@gmail.com &nbsp &nbsp | &nbsp &nbsp <b>Linkedin: </b> &nbsp <a href=https://www.linkedin.com/in/joelconti/>https://www.linkedin.com/in/joelconti/</a> &nbsp &nbsp | &nbsp &nbsp Twitter/X: &nbsp @JoelConti -->
 
 </div>
 
-</br>
-<hr style="height:2px;border-width:0; border-top: 2px solid #d2d2d2;margin-top: 30px;width:42%;">
-<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2; margin-top: 1px;width:35%;">
 
 
-<div class="commissions" style = "margin-left: 35%; margin-right: 35%; text-align: center">
-<h1><span style = "font-size: 28px">Commissions are OPEN!</span></h1>
-<p style="font-size: 16px; line-height: 22px">Want your own custom maps? Be it a map for your book, a print for your wall, something for your fantasy or alternate history settings, or anything in between, I would love to work with you to create <i>exactly</i> the map you’re looking for.</br> Reach out over email, and let’s get started!</p>
+
+
 <!-- 
 <hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:35%;">
 	<hr style="height:2px;border-width:0; border-top: 2px solid #d2d2d2;margin-top: 1px; margin-bottom: 20px;width:42%;">
