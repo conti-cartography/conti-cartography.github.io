@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cartography Portfolio - Joel Conti</title>
+	<link href="styles.css" rel="stylesheet" >
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+
+
+<style>
+			
+	
+	/* The top menu */
+
+
+	body {
+		font-family: "source sans pro";
+	}
+
+	p {
+		font-size: 20px;
+		line-height: 22px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.main {
+			  
+		font-family: "source sans pro";
+		text-align: justify;
+		text-justify: inter-word;
+	  	background: #222325;
+		color: #f7f7f7;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 18.5714px;
+		margin-top: 120px;
+		margin-left: 350px;
+		padding-left: 1.5%;
+		/*border-left: 7px solid #9195a1;*/
+		margin-right: px;
+
+	}
+
+	.sidenav {
+	  width: 140px;
+	  position: fixed;
+	  z-index: 1;
+	  left: 10px;
+	  overflow-x: hidden;		
+	  margin-left: 5%;
+	  border-radius: 5px;
+	}
+
+	.sidenav a {
+	  padding-left: 10px;
+	  padding-bottom: 10px;
+	  line-height: 	12px;
+	  text-decoration: none;
+	  font-size: 16px;
+	  color: #f7f7f7;
+	  display: block;
+	  border-radius: 5px;
+	}
+
+	.sidenav b {
+	  padding-left: 10px;
+	  padding-bottom: 10px;
+	  line-height: 	12px;
+	  text-decoration: none;
+	  font-size: 16px;
+	  color: #f7f7f7;
+	  display: block;
+	  border-radius: 5px;
+	}
+	.sidenav p {
+		padding-bottom: 5px;
+		font-weight	: 600;
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+	.sidenav a:hover {
+	  color: #064579;
+	  border-radius: 5px;
+	}
+
+.image {
+	 position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 3px;
+}
+
+.gallery-row:hover .overlay {
+  opacity: 1;
+}
+
+  .gallery-row a:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.column {
+	padding: 0px;
+}
+
+.row {
+	padding-top: 1px;
+}
+
+.SectionHeader {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.logo {
+	position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  z-index: 100	 !important;
+}
+
+
+
+.NewGallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+   
+  .gallery-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .gallery-row a {
+    position: relative;
+    display: flex;
+    flex: 1 1 0;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+
+  .gallery-row img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Overlay box */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 0.95rem;
+    pointer-events: none; /* important! prevents hover flicker */
+      line-height: 18px;
+  }
+
+  /* Hover effect — scoped only to the hovered link */
+  .gallery-row a:hover img {
+    transform: scale(1.00);
+  }
+
+  .gallery-row a:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+@media screen and (min-width: 1281px) {
+	.SectionHeader {
+		position: sticky;
+		top: 51px;
+		z-index: 100;
+		background-color: #222325;
+	}
+	.MobileGallery {display: none}
+
+}
+
+@media screen and (max-width: 1280px) {
+		body {margin-left: 0px; margin-right: 0px; }
+		.main { padding-left: 30px; margin-left: 0px; margin-right: 30px; }
+		.navbar { padding-left: 90px; font-size: 18px }
+		.PageIntroText { margin-right: 40px }
+		#PortfolioHighlights { display: none}
+		#PortfolioSPGlobal { display: none }
+	}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="logo">
+	<a target="_blank" href="https://conticartography.net/">
+		<img src="GooseCompass.svg" width = 70 height = 70 style ="float: left; padding-left: 10px"></a>
+</div>
+
+
+<div class="navbar">
+  <div class="row">
+
+ 	<!-- Old background color: 403e3e //-->
+		<div class="column" style="background-color: #494746; border-radius: 10px; margin: 5px;">
+			<a href="https://conticartography.net/"><b>Home Page</b></a></div>
+
+		<div class="column" style="background-color: #494746; margin: 5px; border-radius: 10px; margin-left: 30px">
+			<!-- <div class = "NavRowHead" style="background-color: #63615b; float:  left"><b>Portfolio Galleries:</b></div> //-->
+  		<a href="https://conticartography.net/Portfolio" style="float: left"><b>Map Portfolio</b></a>
+  		<a href="https://conticartography.net/DataViz" style="float: left">Data Visualizations</a>
+  		<a href="https://conticartography.net/WebMaps" style="float: left">Web Maps</a>
+	  	<a href="https://conticartography.net/WorldaIndex" style="float: left">WorldA Index</a>
+		</div>
+
+  	<div class="column" style="background-color: #494746; margin: 5px; border-radius: 10px; margin-left: 30px">
+  		<a href="https://conticartography.net/Contact"><b>Contact & Commissions</b></a>
+  	</div>
+
+	</div>
+</div>
+
+<div class ="sidenav">
+<p style="font-style: bold; font-size: 18px">Navigation</p>
+  <a href="#TheBest">Freelance</a>
+  <a href="#SPGlobal">S&P Global</a>
+  <a href="#ArcGISMaps">Grad School</a>
+  <!-- <a href="#OtherProjects">Other Projects</a> -->
+  <a href="#ScifiFantasy">SciFi & Fantasy</a>
+</div>
+<div class = "main">
+
+
+<h2>Static & Print Map Portfolio</span></h2>
+	</br>
+		<p class="PageIntroText">This page serves as an index for the majority of the maps I have produced over the past decade, both as a hobbyist and freelance cartographer.</br>
+		<p class="PageIntroText">My best cartographic design work can be found in the first section. This section is a mix of thematic maps, historical reference maps, park maps, and alternate history & fantasy cartography. The second section contains a gallary of thematic and reference maps produced in ArcGIS for commissions, coursework, and personal interest. Finally, the final two sections contain older science fiction & fantasy maps produced in high school and college, preserved for posterity. </p>
+		<p class="PageIntroText">Be sure to also check out my series of 80+ historical reference maps, which can be found on the <a href="https://conticartography.net/WorldaIndex">"NextGen WorldA's" page</a>
+		<p class="PageIntroText" style = "padding: 3px"><span style="font-size: 18px; background: #494746; border-radius: 10px; padding: 6px;">Want prints or custom commissions? Reach out to me <a href="mailto:jconti128@gmail.com">via email!</a></span></p>
+
+<div id="TheBest"></div>
+
+	</br>
+	</br>
+
+
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2; margin: 0px; width:100%;">
+<div class = "SectionHeader">
+	<h3 style = "margin-bottom: 10px; margin-top: 10px">Freelance Work & Passion Projects<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Cartographic Design Showcase</span></h3>
+</div>
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2; margin: 0px; width:100%">
+	
+	</br>
+
+<div class="NewGallery" id = "PortfolioHighlights">
+	<div class="gallery-row">
+    <a href="maps/RomeMap_Web.png" target="_blank">
+    	<img src="maps/RomeMap_Web.png" alt="Image 1">
+			<div class="overlay">Map of the Roman Empire during the Reign of Emperor Hadrian.</br><i>Produced in ArcGIS and Adobe Illustrator. Hydrographic and coastline data sourced from Natural Earth. Hillshade from ESRI.</i></div>
+    </a></div>
+
+  <div class="gallery-row">	
+    <a href="maps/SpanishEmpire2.png" target="_blank">
+    	<img src="maps/SpanishEmpire2.png" alt="Image 1">
+			<div class="overlay">Map of the Spanish Empire, showing all its holdings, including those of the Austrian Habsburgs.</br><i>Produced in ArcGIS and Adobe Illustrator. Data sourced from Natural Earth. Hillshade from ESRI.</i></div>
+    </a></div>
+
+
+  <div class="gallery-row">	
+    <a href="maps/Catholic_2.png" target="_blank">
+    	<img src="maps/Catholic_2.png" alt="Image 1">
+			<div class="overlay">A longitudinal map of the per-county share of Catholic Churches out of all congregations.</br><i>Produced in ArcGIS and Adobe Illustrator. Data sourced from historical religious censuses. Shapefiles from NHGIS.</i></div></a>
+		<a target="_blank" href="maps/BurkeLakePark_2.png">
+			<img src="maps/BurkeLakePark_2.png" alt="Fire Nation" width="100%">
+			<div class="overlay">Map of Burke Lake Park in Fairfax, Virginia. </br><i>Produced in ArcGIS and Adobe Illustrator. Data sourced from Fairfax County</i></div>
+		</a>
+  </div>
+
+  <div class="gallery-row">
+			<a target="_blank" href="maps/Wan_Japan.png">
+					<img src="maps/Wan_Japan.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">A Map of the Maximum Extent of the Japanese Empire in 1942, produced for Dr. Ming Wan's Book "East Asian International Relations: Evolution and Social Construction". Produced in Adobe Illustrator</i></div>
+				</a>
+			<a target="_blank" href="maps/ChinaMinorities.png">
+					<img src="maps/ChinaMinorities.png" alt="Map of Chinese minorities by province" width="100%">
+					<div class="overlay">A map of major minority ethnic groups across China, produced as a commission for </i></div>
+			</a>
+  </div>
+
+   <div class="gallery-row">
+			<a target="_blank" href="maps/IMPERV_FINAL.png">
+					<img src="maps/IMPERV_FINAL.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">A map of impervious surfaces in Virginia, derived from VGIN 1m Land Surface Data </br><i>Made with ArcGIS Pro and Adobe Illustrator.</i></div>
+				</a>
+			<a target="_blank" href="maps/ArlingtonDiocese.png">
+					<img src="maps/ArlingtonDiocese.png" alt="Map of Chinese minorities by province" width="100%">
+					<div class="overlay">A reference map of the Catholic Diocese of Arlington in Northern Virginia, including parish boundaries.</br><i> Data sourced from US Census, The Diocese of Arlington, and ESRI. Made with Illustrator and ArcGIS Pro.</i></div>
+			</a>
+  </div>
+
+ 
+  <div class="gallery-row">
+			<a target="_blank" href="maps/TyriaNew.png">
+					<img src="maps/TyriaNew.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">A map of Tyria, the setting of the Guild Wars video game series, in a slightly more rustic style.s</br><i>Made in Adobe Illustrator.</i></div>
+				</a>
+			<a target="_blank" href="maps/AvatarWorld2.png">
+					<img src="maps/AvatarWorld2.png" alt="Map of Chinese minorities by province" width="100%">
+					<div class="overlay">A map of the world of Avatar the Last Airbender, set in the year 99 AG (Season 1).</br><i>Made with Adobe Illustrator.</i></div>
+			</a>
+  </div>
+
+    <div class="gallery-row">
+			<a target="_blank" href="maps/FireNation.png">
+					<img src="maps/FireNation.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">A map of the Fire Nation from the television series Avatar the Last Airbender, set in the year 99 AG (Season 1 of the series).</br><i>Made with Adobe Illustrator.</i></div>
+				</a>
+			<a target="_blank" href="maps/TyriaNew_Color.png">
+					<img src="maps/TyriaNew_Color.png" alt="Map of Chinese minorities by province" width="100%">
+					<div class="overlay">A map of Tyria, the setting of the Guild Wars video game series, in a slightly more rustic style.s</br><i>Made in Adobe Illustrator.</i></div>
+			</a>
+  </div>
+
+  <div class="gallery-row">
+			<a target="_blank" href="maps/NewEngland.png">
+					<img src="maps/NewEngland.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">A stylized map of New England.</br><i> Data sourced from Natural Earth and ESRI</i></div>
+				</a>
+			<a target="_blank" href="maps/AzerothNew.png">
+					<img src="maps/AzerothNew.png" alt="Map of Chinese minorities by province" width="100%">
+					<div class="overlay">A map of Azeroth after the 4th War, from World of Warcraft.</i></div>
+			</a>
+  </div>
+
+</div></br>
+
+
+<!-- MOBILE GALLERY -->
+			<div class="MobileGallery">
+				<div class="gallery-row">
+				    <a href="maps/RomeMap_Web.png" target="_blank">
+				    	<img src="maps/RomeMap_Web.png" alt="Image 1">
+							<div class="overlay">Map of the Roman Empire during the Reign of Emperor Hadrian.</br><i>Produced in ArcGIS and Adobe Illustrator. Hydrographic and coastline data sourced from Natural Earth. Hillshade from ESRI.</i></div>
+				    </a>
+				</div>
+
+			  <div class="gallery-row">	
+				    <a href="maps/SpanishEmpire2.png" target="_blank">
+				    	<img src="maps/SpanishEmpire2.png" alt="Image 1">
+							<div class="overlay">Map of the Spanish Empire, showing all its holdings, including those of the Austrian Habsburgs.</br><i>Produced in ArcGIS and Adobe Illustrator. Data sourced from Natural Earth. Hillshade from ESRI.</i></div>
+				    </a>
+			 	</div>
+
+
+			  <div class="gallery-row">	
+				    <a href="maps/Catholic_2.png" target="_blank">
+				    	<img src="maps/Catholic_2.png" alt="Image 1">
+							<div class="overlay">A longitudinal map of the per-county share of Catholic Churches out of all congregations.</br><i>Produced in ArcGIS and Adobe Illustrator. Data sourced from historical religious censuses. Shapefiles from NHGIS.</i></div></a>
+				</div>
+				
+			  
+			  <div class="gallery-row">
+						<a target="_blank" href="maps/Wan_Japan.png">
+								<img src="maps/Wan_Japan.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+								<div class="overlay">A Map of the Maximum Extent of the Japanese Empire in 1942, produced for Dr. Ming Wan's Book "East Asian International Relations: Evolution and Social Construction". Produced in Adobe Illustrator</i></div>
+							</a>
+						<a target="_blank" href="maps/ChinaMinorities.png">
+								<img src="maps/ChinaMinorities.png" alt="Map of Chinese minorities by province" width="100%">
+								<div class="overlay">A map of major minority ethnic groups across China, produced as a commission for </i></div>
+						</a>
+			  </div>
+
+			   <div class="gallery-row">
+						<a target="_blank" href="maps/IMPERV_FINAL.png">
+								<img src="maps/IMPERV_FINAL.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+								<div class="overlay">A map of impervious surfaces in Virginia, derived from VGIN 1m Land Surface Data </br><i>Made with ArcGIS Pro and Adobe Illustrator.</i></div>
+							</a>
+				</div>
+
+				<div class="gallery-row">
+						<a target="_blank" href="maps/NewEngland.png">
+								<img src="maps/NewEngland.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+								<div class="overlay">A stylized map of New England.</br><i> Data sourced from Natural Earth and ESRI</i></div>
+							</a>
+						<a target="_blank" href="maps/BurkeLakePark_2.png">
+							<img src="maps/BurkeLakePark_2.png" alt="Fire Nation" width="100%">
+							<div class="overlay">Map of Burke Lake Park in Fairfax, Virginia. </br><i>Produced in ArcGIS and Adobe Illustrator. Data sourced from Fairfax County</i></div>
+						</a>
+		  	</div>
+
+			  <div class="gallery-row">
+						<a target="_blank" href="maps/ArlingtonDiocese.png">
+								<img src="maps/ArlingtonDiocese.png" alt="Map of Chinese minorities by province" width="100%">
+								<div class="overlay">A reference map of the Catholic Diocese of Arlington in Northern Virginia, including parish boundaries.</br><i> Data sourced from US Census, The Diocese of Arlington, and ESRI. Made with Illustrator and ArcGIS Pro.</i></div>
+						</a>
+			  </div>
+
+			 
+			  <div class="gallery-row">
+						<a target="_blank" href="maps/AvatarWorld2.png">
+								<img src="maps/AvatarWorld2.png" alt="Map of Chinese minorities by province" width="100%">
+								<div class="overlay">A map of the world of Avatar the Last Airbender, set in the year 99 AG (Season 1).</br><i>Made with Adobe Illustrator.</i></div>
+						</a>
+			  </div>
+
+			  <div class="gallery-row">
+						<a target="_blank" href="maps/FireNation.png">
+								<img src="maps/FireNation.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+								<div class="overlay">A map of the Fire Nation from the television series Avatar the Last Airbender, set in the year 99 AG (Season 1 of the series).</br><i>Made with Adobe Illustrator.</i></div>
+							</a>
+				</div>
+
+				<div class ="gallery-row">
+						<a target="_blank" href="maps/TyriaNew.png">
+								<img src="maps/TyriaNew.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+								<div class="overlay">A map of Tyria, the setting of the Guild Wars video game series, in a slightly more rustic style.s</br><i>Made in Adobe Illustrator.</i></div>
+							</a>
+						<a target="_blank" href="maps/TyriaNew_Color.png">
+								<img src="maps/TyriaNew_Color.png" alt="Map of Chinese minorities by province" width="100%">
+								<div class="overlay">A map of Tyria, the setting of the Guild Wars video game series, in a slightly more rustic style.s</br><i>Made in Adobe Illustrator.</i></div>
+						</a>
+			  </div>
+
+			  <div class = "gallery-row">
+						<a target="_blank" href="maps/AzerothNew.png">
+								<img src="maps/AzerothNew.png" alt="Map of Chinese minorities by province" width="100%">
+								<div class="overlay">A map of Azeroth after the 4th War, from World of Warcraft.</i></div>
+						</a>
+				</div>
+
+			</div></br>
+
+
+<hr id="SPGlobal" style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 60px">
+<div class = "SectionHeader">
+	<h3 style = "margin-bottom: 0px; margin-top: 10px;">S&P Global<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Maps produced at S&P Global with MAPublisher.</span></h3>
+</div>
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 45px;">
+
+
+
+
+<div class="NewGallery" id = "PortfolioSPGlobal">
+
+  <div class="gallery-row">
+			<a target="_blank" href="maps/SPGlobal/SPG_Eclipse.png">
+					<img src="maps/SPGlobal/SPG_Eclipse.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Map of the 2024 Solar Eclipse, produced for and copyright of S&P Global Commodity Insights.</div>
+			</a>
+			<a target="_blank" href="maps/SPGlobal/SPG_California.png">
+					<img src="maps/SPGlobal/SPG_California.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Infographic of California's growing hydrogen infrastructure, produced for and copyright of S&P Global Commodity Insights.</div>
+			</a>
+		</div>
+
+  <div class="gallery-row">
+			<a target="_blank" href="maps/SPGlobal/SPG_Brazil.png">
+					<img src="maps/SPGlobal/SPG_Brazil.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Map of Turkey's gas infrastructure and regional gas flows, produced for and copyright of S&P Global Commodity Insights.</div>
+			</a>
+	</div>
+
+	<div class="gallery-row">
+			<a target="_blank" href="maps/SPGlobal/SPG_Algeria.png">
+					<img src="maps/SPGlobal/SPG_Algeria.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Map of Algeria's oil and gas exports,produced for and copyright of S&P Global Commodity Insights.</div>
+			</a>
+			<a target="_blank" href="maps/SPGlobal/SPG_Baltic.png">
+					<img src="maps/SPGlobal/SPG_Baltic.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Map of early 2025 shipping incidents in the Baltic Sea</div>
+			</a>
+			<!--
+			<a target="_blank" href="maps/SPGlobal/Baltic.png">
+					<img src="maps/SPGlobal/SPG_NJ.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Map of potential lost LNG capacity without REA facilities, produced for and copyright of S&P Global Commodity Insights.</div>
+			</a>
+			-->
+			<a target="_blank" href="maps/SPGlobal/SPG_Transco_SE.png">
+					<img src="maps/SPGlobal/SPG_Transco_SE.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">TRANSCO Pipeline expansion in the Southeastern US, produced for and copyright of S&P Global Commodity Insights.</div>
+			</a>
+	</div>
+
+
+	<div class="gallery-row">
+			<a target="_blank" href="maps/SPGlobal/SPG_UAE.png">
+					<img src="maps/SPGlobal/SPG_UAE.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Map of the UAE's energy certificate issuers, produced for and copyright of S&P Global Commodity Insights.</div>
+			</a>
+			<a target="_blank" href="maps/SPGlobal/SPG_Oman.png">
+					<img src="maps/SPGlobal/SPG_Oman.svg" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Map of Oman's oil and gas concessions, produced for and copyright of S&P Global Commodity Insights.</div>
+			</a>
+	</div>
+
+
+  <div class="gallery-row">
+			<a target="_blank" href="maps/SPGlobal/SPG_ANGEA.png">
+					<img src="maps/SPGlobal/SPG_ANGEA.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Coal shipment routes and imports in Asia Pacific, produced for and copyright of S&P Global Commodity Insights.</div>
+			</a>
+			<a target="_blank" href="maps/SPGlobal/SPG_UK_CCUS.png">
+					<img src="maps/SPGlobal/SPG_UK_CCUS.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">UK CCUS cluster investments, produced for and copyright of S&P Global Commodity Insights.</div>
+			</a>
+	</div>
+
+</div>
+
+
+<!-- MOBILE S&P GALLERY -->
+
+
+				<div class="MobileGallery">
+
+				  <div class="gallery-row">
+							<a target="_blank" href="maps/SPGlobal/SPG_Eclipse.png">
+									<img src="maps/SPGlobal/SPG_Eclipse.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+									<div class="overlay">Map of the 2024 Solar Eclipse, produced for and copyright of S&P Global Commodity Insights.</div>
+							</a>
+					</div>
+
+					 <div class="gallery-row">
+							<a target="_blank" href="maps/SPGlobal/SPG_California.png">
+									<img src="maps/SPGlobal/SPG_California.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+									<div class="overlay">Infographic of California's growing hydrogen infrastructure, produced for and copyright of S&P Global Commodity Insights.</div>
+							</a>
+					</div>
+
+				  <div class="gallery-row">
+							<a target="_blank" href="maps/SPGlobal/SPG_Brazil.png">
+									<img src="maps/SPGlobal/SPG_Brazil.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+									<div class="overlay">Map of Turkey's gas infrastructure and regional gas flows, produced for and copyright of S&P Global Commodity Insights.</div>
+							</a>
+					</div>
+
+					<div class="gallery-row">
+							
+							<a target="_blank" href="maps/SPGlobal/SPG_Baltic.png">
+									<img src="maps/SPGlobal/SPG_Baltic.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+									<div class="overlay">Map of early 2025 shipping incidents in the Baltic Sea</div>
+							</a>
+							<a target="_blank" href="maps/SPGlobal/SPG_ANGEA.png">
+									<img src="maps/SPGlobal/SPG_ANGEA.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+									<div class="overlay">Coal shipment routes and imports in Asia Pacific, produced for and copyright of S&P Global Commodity Insights.</div>
+							</a>
+
+					</div>
+
+
+					<div class="gallery-row">
+							<a target="_blank" href="maps/SPGlobal/SPG_UAE.png">
+									<img src="maps/SPGlobal/SPG_UAE.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+									<div class="overlay">Map of the UAE's energy certificate issuers, produced for and copyright of S&P Global Commodity Insights.</div>
+							</a>
+							<a target="_blank" href="maps/SPGlobal/SPG_Oman.png">
+									<img src="maps/SPGlobal/SPG_Oman.svg" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+									<div class="overlay">Map of Oman's oil and gas concessions, produced for and copyright of S&P Global Commodity Insights.</div>
+							</a>
+					</div>
+
+
+					<div class ="gallery-row">
+							<a target="_blank" href="maps/SPGlobal/SPG_Algeria.png">
+									<img src="maps/SPGlobal/SPG_Algeria.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+									<div class="overlay">Map of Algeria's oil and gas exports,produced for and copyright of S&P Global Commodity Insights.</div>
+							</a>
+							<a target="_blank" href="maps/SPGlobal/SPG_Transco_SE.png">
+									<img src="maps/SPGlobal/SPG_Transco_SE.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+									<div class="overlay">TRANSCO Pipeline expansion in the Southeastern US, produced for and copyright of S&P Global Commodity Insights.</div>
+							</a>
+					</div>
+
+				  <div class="gallery-row">
+							<a target="_blank" href="maps/SPGlobal/SPG_UK_CCUS.png">
+									<img src="maps/SPGlobal/SPG_UK_CCUS.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+									<div class="overlay">UK CCUS cluster investments, produced for and copyright of S&P Global Commodity Insights.</div>
+							</a>
+					</div>
+
+				</div>
+
+
+<hr id="ArcGISMaps" style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 60px">
+<div class = "SectionHeader">
+	<h3 style = "margin-bottom: 0px; margin-top: 10px;">Graduate School ArcGIS<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Thematic and Reference Maps, primarily for grad school.</span></h3>
+</div>
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 45px;">
+
+
+	</br></br>
+
+
+<div class ="NewGallery">
+	<div class="gallery-row">
+			<a target="_blank" href="maps/Religion1926.png">
+					<img src="maps/Religion1926.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">A choropleth map showing the largest religious denomination by county in 1916, shaded by prominence.</br><i>Data from the 1916 US Religious Census.</i></div>
+			</a>
+
+			<a target="_blank" href="maps/Catholic_1.png">
+					<img src="maps/Catholic_1.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">A longitudinal choropleth map showing the Catholic share of the population by county, from 1890 - 2010.</br><i>Data sourced from historical religious censuses. Made in ArcGIS Pro and Adobe Illustrator.</i></div>
+			</a>
+	</div>
+
+	<div class="gallery-row">	
+			<a target="_blank" href="maps/FairfaxPopHistory1.png">
+					<img src="maps/FairfaxPopHistory1.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Multiple Choropleth maps showing the population density in Northern Virginia from 1970-2010 by census tract. <i>Data from the US Census. Made in ArcGIS Pro.</i></div>
+			</a>
+			<a target="_blank" href="maps/FairfaxPopHistory2.png">
+					<img src="maps/FairfaxPopHistory2.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Multiple Choropleth maps showing the change in population density in Northern Virginia from 1970-2010 by census tract. <i>Data from the US Census. Made in ArcGIS Pro.</i></div>
+			</a>
+	</div>
+
+	<div class="gallery-row">	
+			<a target="_blank" href="maps/Virginia2016.png">
+					<img src="maps/Virginia2016.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Results of the 2016 House of Representatives Election in Virginia by precinct.<i>Data from the Princeton Gerrymandering Project. Made in ArcGIS Pro.</i></div>
+			</a>
+			<a target="_blank" href="maps/Ohio2016.png">
+					<img src="maps/Ohio2016.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Results of the 2016 House of Representatives Election in Ohio by precinct. <i>Data from the Princeton Gerrymandering Project. Made in ArcGIS.</i></div>
+			</a>
+	</div>
+
+</div>	
+
+</br>
+
+
+<!-- 
+<hr id="OtherProjects" style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 80px">
+	<div class="SectionHeader"><h3 style = "margin-bottom: 0px; margin-top:  10px;">Other Projects<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Older Maps, Misc. Odds and Ends...</span></h3></div>
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 45px;">
+
+
+			<div class="PortfolioGallery2">
+			<div class="row">
+				<div class="column"><div class="image">
+					<a target="_blank" href="maps/AustriaEndgame.png">
+					<img src="maps/AustriaEndgame.png" alt="Avatar Political Map - WorldA" width=100% style="max-width: 1204px;">
+					<div class="overlay">Alternate Historical World Map based on the results of a Hearts of Iron 4 Campaign.</br><i>Made in Adobe Photoshop.</i></div>
+					</a></div></div>
+			</div>
+			<div class="row" style="padding-top: 2px;">
+				<div class="column"  style="width: 50.25%; padding-right: 0px;float: left"><div class="image">
+					<a target="_blank" href="maps/AvatarPolitical.png">
+					<img src="maps/AvatarPolitical.png" alt="Avatar Political Map - WorldA" width="100%">
+					</a></div></div>
+				<div class="column"  style="width: 48.5%; float: right"><div class="image">
+					<a target="_blank" href="maps/AzerothWorlda.png">
+					<img src="maps/AzerothWorlda.png" alt="Avatar Political Map - WorldA" width="100%">
+					</a></div></div>
+			</div>
+
+			<div class="row">
+				<div class="column"><div class="image">
+					<a target="_blank" href="maps/Kaiserreich1939.png">
+					<img src="maps/Kaiserreich1939.png" alt="Kaiserreich Universe: 1939" height="722">
+					</a></div></div>
+			</div>
+
+
+
+</br>
+
+-->
+
+<hr id="ScifiFantasy" style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 100px">
+	<div class="SectionHeader">
+		<h3 style = "margin-bottom: 0px; margin-top:  10px;">Sci-Fi, Fantasy, and Video Games <span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Much, Much Older Work... (Pre-2018)</span></h3>
+	</div>
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 45px;">
+
+		<!-- <p>These maps are much, much older works of mine. The most recent one is over five years old as of 2021. They don't represent my current ability, and are almost all deprecated.</p> </br> -->
+
+
+<div class ="NewGallery">
+
+	<div class="gallery-row">
+			<a target="_blank" href="maps/SwtorGalaxy.png">
+					<img src="maps/SwtorGalaxy.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">The State of the Star Wars Galaxy at the beginning of the events of the <i> Onslaught </i> expansion of <i> Star Wars: The Old Republic</i>.</br><i>Made in Adobe Photoshop. Galaxy Basemap from the book <i>Star Wars: The Essential Atlas</i></div>
+			</a>
+	</div>
+
+		<div class="gallery-row">
+			<a target="_blank" href="maps/Act_I.png">
+					<img src="maps/SwtorGalaxy.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">The Galaxy at the beginning of <i>Star Wars: The Old Republic</i></br>Made in Adobe Photoshop. Galaxy Basemap from the book <i>Star Wars: The Essential Atlas</i></div>
+			</a>
+			<a target="_blank" href="maps/Act_II.png">
+					<img src="maps/SwtorGalaxy.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">The Galaxy at the beginning of Act II of <i>Star Wars: The Old Republic</i></br>Made in Adobe Photoshop. Galaxy Basemap from the book <i>Star Wars: The Essential Atlas</i></div>
+			</a>
+			<a target="_blank" href="maps/Act_III.png">
+					<img src="maps/SwtorGalaxy.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">The Galaxy at the beginning of Act III of <i>Star Wars: The Old Republic</i></br>Made in Adobe Photoshop. Galaxy Basemap from the book <i>Star Wars: The Essential Atlas</i></div>
+			</a>
+		</div>
+
+		<div class="gallery-row">
+			<a target="_blank" href="maps/comission.png">
+					<img src="maps/comission.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">Commission produced for a client's custom Sci-Fi Role Playing Setting.</div>
+			</a>
+			<a target="_blank" href="maps/Andor.png">
+					<img src="maps/Andor.png" alt="Map of the maximum extent of Japanese conqeusts in the 20th century." width="100%">
+					<div class="overlay">The continent of Andor, produced for a client's Minecraft Server.</div>
+			</a>
+	</div>
+
+	</div>
+
+<!--
+
+
+			<div class="PortfolioGallery2">
+			<div class="row">
+				<div class="column">
+					<div class="image"><a target="_blank" href="maps/SwtorGalaxy.png">
+					<img src="maps/SwtorGalaxy.png" alt="SwtorGalaxy" width="100%">
+					<div class="overlay">The State of the Star Wars Galaxy at the beginning of the events of the <i> Onslaught </i> expansion of <i> Star Wars: The Old Republic</i>.</br><i>Made in Adobe Photoshop. Galaxy Basemap from the book <i>Star Wars: The Essential Atlas</i></div>
+					</a></div></div>
+			</div>
+
+			<div class="row">
+				<div class="column"  style="width: 33.1%; padding-right: 4px; float: left"><div class="image">
+					<a target="_blank" href="maps/Act_I.png">
+					<img src="maps/Act_I.png" alt="Star Wars Dark Base Map" width="100%">
+					<div class="overlay">The Galaxy at the beginning of <i>Star Wars: The Old Republic</i></br>Made in Adobe Photoshop. Galaxy Basemap from the book <i>Star Wars: The Essential Atlas</i></div>
+					</a></div></div>
+				<div class="column"  style="width: 33.1%; padding-right: 2px; float: center"><div class="image">
+					<a target="_blank" href="maps/Act_II.png">
+					<img src="maps/Act_II.png" alt="Star Wars Dark Base Map" width="100%">
+					<div class="overlay">The Galaxy at the beginning of Act II of <i>Star Wars: The Old Republic</i></br>Made in Adobe Photoshop. Galaxy Basemap from the book <i>Star Wars: The Essential Atlas</i></div>
+					</a></div></div>
+				<div class="column"  style="width: 33.1%;  padding: 0px; padding-right: 0px; float: right"><div class="image">
+					<a target="_blank" href="maps/Act_III.png">
+					<img src="maps/Act_III.png" alt="Star Wars Dark Base Map" width="100%">
+					<div class="overlay">The Galaxy at the beginning of Act III of <i>Star Wars: The Old Republic</i></br>Made in Adobe Photoshop. Galaxy Basemap from the book <i>Star Wars: The Essential Atlas</i></div>
+					</a></div></div>
+			</div>
+
+
+			<div class="row">
+				<div class="column"  style="width: 54.75%; padding-left: 0px;float: left"><div class="image">
+					<a target="_blank" href="maps/comission.png">
+					<img src="maps/comission.png" alt="Star Wars Dark Base Map" width="100%">
+					<div class="overlay">Commission produced for a client's custom Sci-Fi Role Playing Setting.</div>
+					</a></div></div>
+				<div class="column"  style="width: 44.75%; float: right"><div class="image">
+					<a target="_blank" href="maps/SwtorWorlda.png">
+					<img src="maps/SwtorWorlda.png" alt="Star Wars Dark Base Map" width="100%">
+					<div class="overlay">The Star Wars Galaxy at the Beginning of SWTOR, pixel-art style.</div>
+					</a></div></div>
+			</div>
+
+			<div class="row">
+					<div class="column"  style="width: 41.25%; float: left">
+					<div class="image"><a target="_blank" href="maps/Tyria.png">
+					<img src="maps/Tyria.png" alt="Star Wars Dark Base Map" width="100%">
+					<div class="overlay">A <i>much</i> older map of the world of Tyria, made in 2013.</div>
+					</a></div></div>
+				<div class="column"  style="width: 58.25%; float: right">
+					<div class="image"><a target="_blank" href="maps/Andor.png">
+					<img src="maps/Andor.png" alt="Star Wars Dark Base Map" width="100%">
+					<div class="overlay">The continent of Andor, produced for a client's Minecraft Server.</div>
+					</a></div></div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					<div class="image"><a target="_blank" href="maps/AzerothWorlda2.png">
+					<img src="maps/AzerothWorlda2.png" alt="Star Wars Dark Base Map" width="100%">
+					<div class="overlay">The World of Azeroth from World of Warcraft, at the beginning of the Fourth War.</div>
+					</a></div></div>
+			</div>
+
+		</div>
+
+-->
+<!--
+
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 100px">
+<div class="SectionHeader"><h3 id="BlankMaps" style = "margin-bottom: 0px;  margin-top:  10px;">Blank Maps<span style="font-variant: normal; font-size: 23px;">: &nbsp &nbsp Templates for your own projects!</span></h3></div>
+<hr style="height:2px;border-width:0; border-top: 1px dotted #d2d2d2;width:100%; margin-top: 10px; margin-bottom: 45px;">
+
+
+<p style="margin-bottom: 60px"> All maps in this section are free for reproduction and use for any non-commercial project</p>
+		<div class="PortfolioGallery2">
+			<div class="row">
+				<div class="column"  style="width: 49.75%; float: left"><div class="image">
+					<a target="_blank" href="maps/SWDark.png">
+					<img src="maps/SWDark.png" alt="Star Wars Dark Base Map" width="100%">
+					<div class="overlay">Blank map of the Star Wars Galaxy (Dark Version)</div>
+					</a></div></div>
+				<div class="column"  style="width: 49.75%; float: right"><div class="image">
+					<a target="_blank" href="maps/SWLight.png">
+					<img src="maps/SWLight.png" alt="Star Wars Light Base Map"  width="100%">
+					<div class="overlay">Blank map of the Star Wars Galaxy (Light Version)</div>
+					</a></div></div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<div class="image"><a target="_blank" href="maps/AzerothBlank.png">
+					<img src="maps/AzerothBlank.png" alt="Azeroth World Map" width="100%">
+					<div class="overlay">Blank map of Azeroth</div>
+					</a></div></div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<div class="image"><a target="_blank" href="maps/AvatarWorlda.png">
+					<img src="maps/AvatarWorlda.png" alt="Azeroth World Map"width="100%">
+					<div class="overlay">Blank map of the World of Avatar</div>
+					</a></div></div>
+			</div>
+		</div>
+
+
+</br></br></br></br>
+
+//-->
+
+
+
+		</br></br>
+		</div>
+
+		 <script>
+    function resizeGalleries() {
+      const rows = document.querySelectorAll('.gallery-row');
+
+      rows.forEach(row => {
+        const links = [...row.querySelectorAll('a')];
+        if (links.length === 0) return;
+
+        const images = links.map(link => link.querySelector('img'));
+        const ratios = images.map(img => img.naturalWidth / img.naturalHeight);
+        const totalRatio = ratios.reduce((a, b) => a + b, 0);
+
+        const gap = parseFloat(getComputedStyle(row).gap);
+        const totalGap = gap * (images.length - 1);
+        const rowWidth = row.clientWidth;
+        const usableWidth = rowWidth - totalGap;
+
+        links.forEach((link, i) => {
+          const proportion = ratios[i] / totalRatio;
+          link.style.flexBasis = `${usableWidth * proportion}px`;
+          link.style.flexGrow = '0';
+          link.style.flexShrink = '0';
+        });
+      });
+    }
+
+    window.addEventListener('load', resizeGalleries);
+    window.addEventListener('resize', resizeGalleries);
+  </script>
+
+		</body>
+		</html>
